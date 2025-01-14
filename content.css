@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #333333;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  z-index: 1000;
+}
+
+header nav ul {
+  display: flex;
+  position: fixed;
+  top: 30px;
+  right: 25px;
+  gap: 50px;
+  list-style: none;
+  z-index: 1001;
+}
+
+header nav ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "Futura";
+  font-size: 1.3em;
+  display: inline-block;
+  position: relative;
+}
+
+header nav ul a::after {
+  background-color: white;
+  bottom: -1px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+  width: 100%;
+}
+
+header nav ul a:hover::after {
+  transform: scale(1, 1);
+}
+
+.画像セクション {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.画像テスト {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+  display: grid;
+  grid-template-columns: repeat(7, 25vw);
+  gap: 40px;
+}
+
+.画像テスト::-webkit-scrollbar {
+  display: none;
+}
+
+img.画像テスト1 {
+  display: inline-block;
+  width: 350px;
+  object-fit: cover;
+}
+
+.画像テスト1 {
+  transition: 0.2s;
+}
+.画像テスト1:hover {
+  transform: scale(1.1);
+}
+
+.上下帯 {
+  color: #cccccc;
+  font-family: "Futura";
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 5px;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.下帯 {
+  bottom: 0;
+  height: 30px;
+}

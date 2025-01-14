@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contet/Color and Ratio</title>
+    <link rel="stylesheet" href="content.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#tos">About</a></li>
+            <li><a href="">Content</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="画像セクション">
+        <div class="画像テスト">
+          <a href="標識幅員.html"
+            ><img class="画像テスト1" src="標識幅員.png"
+          /></a>
+          <a href="標識駐停車.html"
+            ><img class="画像テスト1" src="標識駐停車.png"
+          /></a>
+          <a href="標識信号.html"
+            ><img class="画像テスト1" src="標識信号.png"
+          /></a>
+          <a href="標識止まれ.html"
+            ><img class="画像テスト1" src="標識止まれ.png"
+          /></a>
+          <!--  -->
+          <a href="信号.html"><img class="画像テスト1" src="信号.png" /></a>
+          <a href="コーン.html"><img class="画像テスト1" src="コーン.png" /></a>
+          <a href="踏切.html"><img class="画像テスト1" src="踏切.png" /></a>
+          <a href="歩行者信号.html"
+            ><img class="画像テスト1" src="歩行者信号.png"
+          /></a>
+          <!--  -->
+          <a href="サインポール.html"
+            ><img class="画像テスト1" src="サインポール.png"
+          /></a>
+          <a href="消火器.html"><img class="画像テスト1" src="消火器.png" /></a>
+          <!--  -->
+          <a href="半額.html"><img class="画像テスト1" src="半額.png" /></a>
+          <a href="初心者.html"><img class="画像テスト1" src="初心者.png" /></a>
+          <a href="高齢者.html"><img class="画像テスト1" src="高齢者.png" /></a>
+          <!--  -->
+          <a href="ハタタテ.html"
+            ><img class="画像テスト1" src="ハタタテ.png"
+          /></a>
+          <a href="カクレクマノミ.html"
+            ><img class="画像テスト1" src="カクレクマノミ.png"
+          /></a>
+          <a href="ナンヨウハギ.html"
+            ><img class="画像テスト1" src="ナンヨウハギ.png"
+          /></a>
+          <!--  -->
+          <a href="ケツァール.html"
+            ><img class="画像テスト1" src="ケツァール.png"
+          /></a>
+          <a href="カワセミ.html"
+            ><img class="画像テスト1" src="カワセミ.png"
+          /></a>
+          <a href="インコ.html"><img class="画像テスト1" src="インコ.png" /></a>
+          <a href="ヤマショウビン.html"
+            ><img class="画像テスト1" src="ヤマショウビン.png"
+          /></a>
+          <!--  -->
+          <a href="ストレリチア.html"
+            ><img class="画像テスト1" src="ストレリチア.png"
+          /></a>
+          <a href="日本.html"><img class="画像テスト1" src="日本.png" /></a>
+          <a href="アメリカ.html"
+            ><img class="画像テスト1" src="アメリカ.png"
+          /></a>
+          <a href="パレスチナ.html"
+            ><img class="画像テスト1" src="パレスチナ.png"
+          /></a>
+          <a href="ブラジル.html"
+            ><img class="画像テスト1" src="ブラジル.png"
+          /></a>
+
+          <a href="セブン.html"><img class="画像テスト1" src="セブン.png" /></a>
+          <a href="ローソン.html"
+            ><img class="画像テスト1" src="ローソン.png"
+          /></a>
+          <a href="ファミマ.html"
+            ><img class="画像テスト1" src="ファミマ.png"
+          /></a>
+          <a href="モンスター.html"
+            ><img class="画像テスト1" src="モンスター.png"
+          /></a>
+          <a href="三ツ矢サイダー.html"
+            ><img class="画像テスト1" src="三ツ矢サイダー.png"
+          /></a>
+          <a href="達磨.html"><img class="画像テスト1" src="達磨.png" /></a>
+          <a href="鏡餅.html"><img class="画像テスト1" src="鏡餅.png" /></a>
+          <a href="花札.html"><img class="画像テスト1" src="花札.png" /></a>
+          <a href="バレーボール.html"
+            ><img class="画像テスト1" src="バレーボール.png"
+          /></a>
+          <a href="ツイッチ.html"
+            ><img class="画像テスト1" src="ツイッチ.png"
+          /></a>
+        </div>
+      </div>
+    </main>
+
+    <div class="上下帯 下帯">Scroll in all dirction!</div>
+
+    <script>
+      window.onload = () => {
+        const scrollX = document.body.scrollWidth / 2 - window.innerWidth / 2;
+        const scrollY = document.body.scrollHeight / 2 - window.innerHeight / 2;
+        window.scrollTo(scrollX, scrollY);
+        const container = document.querySelector(".画像テスト");
+
+        if (container) {
+          const scrollXContainer =
+            container.scrollWidth / 2 - container.clientWidth / 2;
+          const scrollYContainer =
+            container.scrollHeight / 2 - container.clientHeight / 2;
+
+          container.scrollTo(scrollXContainer, scrollYContainer);
+        }
+      };
+    </script>
+  </body>
+</html>

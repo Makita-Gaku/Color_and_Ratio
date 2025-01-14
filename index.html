@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "dsr0uyw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+<style>html {scroll-behavior: smooth;}</style>
+
+    <title>Color and Ratio</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#tos">About</a></li>
+            <li><a href="content.html">Content</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <a href="content.html"
+          ><img class="タイトル" src="タイトルロゴ.png"
+        /></a>
+      </div>
+    </main>
+
+    <section id="tos">
+      <img src="タイトルロゴ.png" alt="" />
+      <div class="飛び先"></div>
+
+      <div class="説明">
+        <div class="日本語">
+          <div class="日本語説明">
+            とは...<br />
+            あらゆるモノを、形に関する情報を捨て色と色の比率<br />
+            で表現したサイトです。普段何気なく目にしているも<br />
+            のを色と比率からみる事で、新たな発見があるかもし<br />
+            れません。
+          </div>
+
+          <div class="余白"></div>
+
+          <div class="日本語注意事項">
+            ※本サイトは、正確な色や色の比率を知るためのサイトではありません。色は<br />
+            画像から抽出したものであり、比率はある１方向から見た時の色の比率のため<br />
+            誤差がある場合がございます。あらかじめ理解した上でご利用ください。
+          </div>
+        </div>
+
+        <div class="英語">
+          <div class="英語説明">
+            is ...<br />
+            a site that expresses all things in terms of colors and<br />
+            color ratios, discarding information about shapes.<br />
+            You may discover new things by looking at the colors<br />
+            and proportionsof things you usually see casually.
+          </div>
+
+          <div class="余白"></div>
+
+          <div class="英語注意事項">
+            ※This site is not a site for knowing accurate colors or color
+            ratios.<br />
+            The color is It is extracted from an image, and there may be
+            errors<br />
+            because the ratio is the ratio of colors when viewed from one<br />
+            direction. Please understand this before using. in mind.
+          </div>
+        </div>
+      </div>
+
+      <div class="ボタン">
+          <a href="content.html" class="ボタン1">To the world of color and ratio ▷
+          </a>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>
